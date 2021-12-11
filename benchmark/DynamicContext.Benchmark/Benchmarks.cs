@@ -1,6 +1,8 @@
 ﻿using AlwaysDeveloping.EntityFrameworkCore.DynamicContext;
 using BenchmarkDotNet.Attributes;
+using DynamicContext.Model;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace DynamicContext.Benchmark

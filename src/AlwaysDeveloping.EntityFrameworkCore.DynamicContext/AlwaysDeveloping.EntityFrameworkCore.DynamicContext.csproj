@@ -14,9 +14,8 @@
 		<AssemblyOriginatorKeyFile>..\..\DynamicContext.snk</AssemblyOriginatorKeyFile>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<PackageIcon>logo_128x128.png</PackageIcon>
 		<Deterministic>true</Deterministic>
-		<RepositoryUrl>https://github.com/always-developing/Rollcall.Extensions.Microsoft.DependencyInjection.git</RepositoryUrl>
+		<RepositoryUrl>https://github.com/always-developing/AlwaysDeveloping.EntityFrameworkCore.DynamicContext.git</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<Title>AlwaysDeveloping.EntityFrameworkCore.DynamicContext</Title>
