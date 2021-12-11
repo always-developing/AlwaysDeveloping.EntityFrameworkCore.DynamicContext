@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<SignAssembly>True</SignAssembly>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Authors>JP Seini</Authors>
+		<Version>1.0.0</Version>
+		<Description>Provides a dynamic context EntityFramework Core dbcontext, allowing raw SQL queries to be executed without an explicit DbSet</Description>
+		<Copyright>Copyright JP Seini</Copyright>
+		<PackageTags>efcore;entity framework core;entity framework;entityframework core;entity frameworkcore;context;dbcontext;dynamic;dynamiccontext</PackageTags>
+		<AssemblyOriginatorKeyFile>..\..\DynamicContext.snk</AssemblyOriginatorKeyFile>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageIcon>logo_128x128.png</PackageIcon>
+		<Deterministic>true</Deterministic>
+		<RepositoryUrl>https://github.com/always-developing/Rollcall.Extensions.Microsoft.DependencyInjection.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<Title>AlwaysDeveloping.EntityFrameworkCore.DynamicContext</Title>
+	</PropertyGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="[3.1.0,5)" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="[3.1.0,5)" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="[5.0.0,6)" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="[5.0.0,6)" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="[6.0.0,7)" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="[6.0.0,7)" />
+	</ItemGroup>
+
+</Project>
