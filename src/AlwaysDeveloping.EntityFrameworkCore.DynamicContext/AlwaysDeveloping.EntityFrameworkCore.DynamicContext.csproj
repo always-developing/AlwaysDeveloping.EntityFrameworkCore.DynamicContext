@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
@@ -10,7 +10,7 @@
 		<Version>1.0.0</Version>
 		<Description>Provides a dynamic context EntityFramework Core dbcontext, allowing raw SQL queries to be executed without an explicit DbSet</Description>
 		<Copyright>Copyright JP Seini</Copyright>
-		<PackageTags>efcore;entity framework core;entity framework;entityframework core;entity frameworkcore;context;dbcontext;dynamic;dynamiccontext</PackageTags>
+		<PackageTags>efcore;entityframeworkcore;entity;framework;entityframework;context;dbcontext;dynamic;dynamiccontext;dbset</PackageTags>
 		<AssemblyOriginatorKeyFile>..\..\DynamicContext.snk</AssemblyOriginatorKeyFile>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
