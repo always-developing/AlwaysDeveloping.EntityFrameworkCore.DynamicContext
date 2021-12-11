@@ -1,0 +1,27 @@
+name: .NET
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Pack
+      run: dotnet pack --configuration Release
+#    - name: Upload a Build Artifact
+#      uses: actions/upload-artifact@v2.2.4
+#      with:
+#        name: artifacts
+#        path: ./src/AlwaysDeveloping.EntityFrameworkCore.DynamicContext/bin/Release/*nupkg
+    - name: Push nupkg #snupkg automatically gets uploaded as well with the below command
+      run: dotnet nuget push ./src/AlwaysDeveloping.EntityFrameworkCore.DynamicContext/bin/Release/*.nupkg -k ${{ secrets.GITHUB }} -s https://api.nuget.org/v3/index.json   
